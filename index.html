@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://use.fontawesome.com/5c01b852c8.js"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="mx-auto font-['Cardo']">
+    <div class="px-5 lg:px-44 py-5 lg:py-10 flex items-center relative">
+        <a href="#" class="flex items-center gap-1">
+            <img src="./images/logo.png" class="w-6 h-6" alt="logo" />
+            <h1 class="lg:text-3xl font-semibold">BARBE & CIMON NOTAIRES</h1>
+        </a>
+
+        <!-- toggle button -->
+        <button class="btn ml-auto lg:hidden p-2 text-2xl">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        
+        <!-- mobile nav -->
+        <ul class="sidebar hidden lg:hidden py-10 absolute top-20 left-0 right-0 bg-black opacity-60 flex flex-col items-center gap-5 text-base text-gray-100 tracking-widest">
+            <li><a href="#" class="font-medium hover:text-red-700" >A PROPOS</a></li>
+            <li><a href="#" class="font-medium hover:text-red-700" >NOS SERVICES</a></li>
+            <li><a href="#" class="font-medium hover:text-red-700" >ARTICLES</a></li>
+            <li><a href="#" class="font-medium hover:text-red-700" >CONTACT</a></li>
+            <li><a href="#" class="font-semibold hover:text-red-700" >EN</a></li>
+        </ul>
+
+        <!-- desktop nav -->
+        <div class="hidden lg:block ml-auto">
+            <ul class="flex items-center gap-5 text-base tracking-widest">
+                <li><a href="#" class="font-medium hover:text-red-700" >A PROPOS</a></li>
+                <li><a href="#" class="font-medium hover:text-red-700" >NOS SERVICES</a></li>
+                <li><a href="#" class="font-medium hover:text-red-700" >ARTICLES</a></li>
+                <li><a href="#" class="font-medium hover:text-red-700" >CONTACT</a></li>
+                <li class="ml-5"><a href="#" class="font-semibold hover:text-red-700" >EN</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="lg:pl-44 pt-14 pb-28 bg-gradient-to-t from-red-200 flex flex-col-reverse lg:flex-row items-center">
+        <div class="px-5 lg:px-0 flex flex-col items-center lg:items-start text-center lg:text-left gap-5 lg:gap-8">
+            <div>
+                <h1 class="text-sm lg:text-lg text-red-700">NOUS VALORISONS LA</h1>
+                <h1 class="text-4xl lg:text-5xl text-red-700 font-medium">CLARTE <span class="font-light">></span></h1>
+            </div>
+            <p class="lg:w-1/2 text-base font-medium">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incidiunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <button class="mt-3 lg:mt-0 w-48 lg:w-56 h-12 md:h-14 border border-red-700 rounded-md font-semibold text-lg text-red-700 hover:bg-white">
+                En savior plus
+            </button>
+        </div>
+        <div>
+            <img src="./images/pen.png" class="" />
+        </div>
+    </div>
+    <div class="w-full h-2/6">
+        <img src="./images/bg-houses.png" class="w-full" alt="" />
+    </div>
+    <div class="px-5 lg:px-44 py-14 lg:py-24 flex flex-col">
+        <div>
+            <span class="font-medium text-lg text-blue-700">NOS</span>
+            <h2 class="text-3xl lg:text-6xl text-blue-900 font-medium">SERVICES</h2>
+        </div>
+        <div class="py-6 lg:py-10 flex flex-col lg:flex-row w-full gap-5 lg:gap-3">
+            <button class="bg-blue-900 rounded-lg h-24 lg:h-32 lg:w-2/5 text-xl lg:text-2xl text-white">
+                COPROPRIETE
+            </button>
+            <button class="bg-orange-900 rounded-lg h-24 lg:h-32 lg:w-2/5 text-xl lg:text-2xl text-white">
+                PLANIFICATION FAMILIALE
+            </button>
+            <button class="bg-red-900 rounded-lg h-24 lg:h-32 lg:w-2/5 text-xl lg:text-2xl text-white">
+                IMMOBILIER
+            </button>
+        </div>
+    </div>
+    <div class="bg-gray-200 px-5 lg:px-44 py-14 lg:py-24 flex flex-col">
+        <div>
+            <span class="font-medium text-lg text-blue-700">LES</span>
+            <h2 class="text-3xl lg:text-6xl text-blue-900 font-medium">ARTICLES</h2>
+        </div>
+        <div class="py-6 lg:py-12 flex flex-col lg:flex-row items-center gap-8 lg:gap-3 w-full">
+            <div class="bg-white shadow rounded-xl px-5 py-7 flex flex-col gap-2 lg:w-1/4">
+                <h3 class="text-xl font-semibold">Titre de l'article</h3>
+                <p class="font-medium">18 mars 2021 &#8226; <span class="text-underline">Immobilier</span></p>
+                <p class="pt-5 font-medium">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incidiunt ut labore et dolore magna aliqua...
+                </p>
+            </div>
+            <div class="bg-white shadow rounded-xl px-5 py-7 flex flex-col gap-2 lg:w-1/4">
+                <h3 class="text-xl font-semibold">Titre de l'article</h3>
+                <p class="font-medium">18 mars 2021 &#8226; <span class="text-underline">Immobilier</span></p>
+                <p class="pt-5 font-medium">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incidiunt ut labore et dolore magna aliqua...
+                </p>
+            </div>
+            <div class="bg-white shadow rounded-xl px-5 py-7 flex flex-col gap-2 lg:w-1/4">
+                <h3 class="text-xl font-semibold">Titre de l'article</h3>
+                <p class="font-medium">18 mars 2021 &#8226; <span class="text-underline">Immobilier</span></p>
+                <p class="pt-5 font-medium">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incidiunt ut labore et dolore magna aliqua...
+                </p>
+            </div>
+            <div class="bg-white shadow rounded-xl px-5 py-7 flex flex-col gap-2 lg:w-1/4">
+                <h3 class="text-xl font-semibold">Titre de l'article</h3>
+                <p class="font-medium">18 mars 2021 &#8226; <span class="text-underline">Immobilier</span></p>
+                <p class="pt-5 font-medium">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incidiunt ut labore et dolore magna aliqua...
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="px-5 lg:px-44 py-14 lg:py-24 flex flex-col lg:flex-row gap-14 lg:gap-0 lg:items-start">
+        <a href="#" class="flex items-center gap-2">
+            <img src="./images/logo.png" class="w-6 h-6" alt="logo" />
+            <h1 class="text-xl lg:text-3xl font-semibold">BARBE & CIMON NOTAIRES</h1>
+        </a>
+        <div class="flex lg:ml-auto gap-10 lg:gap-24">
+            <div>
+                <ul class="flex flex-col gap-5 text-sm lg:text-base tracking-wider">
+                    <li><a href="#" class="font-medium hover:text-red-700" >A PROPOS</a></li>
+                    <li><a href="#" class="font-medium hover:text-red-700" >NOS SERVICES</a></li>
+                    <li><a href="#" class="font-medium hover:text-red-700" >ARTICLES</a></li>
+                    <li><a href="#" class="font-medium hover:text-red-700" >CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="md:ml-auto flex flex-col gap-2 lg:gap-4">
+                <h4 class="lg:text-base font-semibold">BUREAU</h4>
+                <div class="">
+                    <p>101 BOULEVARD SAINT</p>
+                    <p>JOSEPH O, MONTREAL, QC</p>
+                    <p>H2T 2P7</p>
+                </div>
+                <h4 class="lg:text-base font-semibold">NOUS SUIVRE</h4>
+            </div>
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector('.btn');
+        const sidebar = document.querySelector('.sidebar');
+
+        btn.addEventListener("click", () => {
+            sidebar.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
